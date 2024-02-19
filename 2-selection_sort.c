@@ -19,29 +19,33 @@ void swap_insert(int x, int y)
 }
 
 /**
- * selection_sort - Driver function that sort integers
- * base on seletion sorting algorithm.
- * @array: The array to be sorted.
- * @size: The array size.
+ * selection_sort - Driver function Sort array of integers in ascending order
+ *                  using the selection sort algorithm.
+ * @array: An array of integers to be sorted.
+ * @size: The size of the array to be sorted.
+ *
+ * Description: Prints the array after each swap
+ * using the selestion .
  */
-
 void selection_sort(int *array, size_t size)
 {
-	size_t a, b, min_index;
+	int *min_index;
+	size_t a, b;
+
+	if (array == NULL || size < 2)
+	{
+		return;
+	}
 
 	for (a = 0; a < size - 1; a++)
 	{
-		min_index = a;
+		min_index = array + a;
 		for (b = a + 1; b < size; b++)
+			min_index = (array[b] < *min_index) ? (array + b) : min_index;
+
+		if ((array + a) != min_index)
 		{
-			if (array[b] < array[min_index])
-			{
-				min_index = b;
-			}
-		}
-		if (min_index != a)
-		{
-			swap_insert(&array[min_index], &array[a]);
+			swap_insert(array + a, min_index);
 			print_array(array, size);
 		}
 	}
