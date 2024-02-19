@@ -9,7 +9,7 @@
  * and swaps the values that they point to.
  */
 
-void swap_values(int* c, int* d)
+void swap_values(int *c, int *d)
 {
 	int temp;
 
@@ -23,9 +23,9 @@ void swap_values(int* c, int* d)
  * @array: the array to be sorted.
  * @size: The size of the array to be sorted.
  *
- * Description: This function is the implementation of Bubble Sort algorithm 
- * that compares two values in an array and bubble the one 
- * with a bigger value to the right 
+ * Description: This function is the implementation of Bubble Sort algorithm
+ * that compares two values in an array and bubble the one
+ * with a bigger value to the right
  * this is loop until they array is sorted in acending order.
  */
 
@@ -44,7 +44,7 @@ void bubble_sort(int *array, size_t size)
 
 		for (b = 0; b < size - 1 - a; b++)
 		{
-			if(array[b] > array[b + 1])
+			if (array[b] > array[b + 1])
 			{
 				swap_values(&array[b], &array[b + 1]);
 				print_array(array, size);
