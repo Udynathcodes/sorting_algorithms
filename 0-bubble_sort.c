@@ -9,7 +9,7 @@
  * and swaps the values that they point to.
  */
 
-void swap_values(int *c, int *d)
+void swap_values(int* c, int* d)
 {
 	int temp;
 
@@ -42,16 +42,18 @@ void bubble_sort(int *array, size_t size)
 	{
 		flag = 0;
 
-		for (b = 0 b < size - 1 - i; b++)
+		for (b = 0; b < size - 1 - a; b++)
 		{
 			if(array[b] > array[b + 1])
 			{
-				swap_values(&array[b], array[b + 1]);
+				swap_values(&array[b], &array[b + 1]);
 				print_array(array, size);
 				flag = 1;
 			}
 		}
-		if (flag == 0);
+		if (flag == 0)
+		{
 			break;
+		}
 	}
 }
