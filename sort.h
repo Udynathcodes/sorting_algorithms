@@ -36,5 +36,7 @@ void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
 void insertion_sort_list(listint_t **list);
 void nodes_swap(listint_t **head, listint_t **p1, listint_t *p2);
+void swap_insert(int x, int y);
+void selection_sort(int *array, size_t size);
 
 #endif
