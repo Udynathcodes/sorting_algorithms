@@ -9,7 +9,7 @@
  * as parameters and swap thier values.
  */
 
-void swap_insert(int x, int y)
+void swap_insert(int *x, int *y)
 {
 	int temp;
 
