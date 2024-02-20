@@ -32,6 +32,9 @@ void selection_sort(int *array, size_t size)
 {
 	size_t a, b, min_index;
 
+	if (array == NULL || size < 2)
+		return;
+
 	for (a = 0; a < size - a; a++)
 	{
 		min_index = a;
