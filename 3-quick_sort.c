@@ -6,7 +6,7 @@ void recursive_quick_sort(int *array, int right, int left, size_t size);
 void quick_sort(int *array, size_t size);
 
 /**
- * swap - Swaps two integers in an array
+ * swap_quick - Swaps two integers in an array
  * @x: Pointer to the first integer
  * @y: Pointer to the second integer
  */
