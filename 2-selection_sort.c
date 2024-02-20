@@ -27,25 +27,24 @@ void swap_insert(int *x, int *y)
  * Description: Prints the array after each swap
  * using the selestion .
  */
+
 void selection_sort(int *array, size_t size)
 {
-	int *min_index;
-	size_t a, b;
+	size_t a, b, min_index;
 
-	if (array == NULL || size < 2)
+	for (a = 0; a < size - a; a++)
 	{
-		return;
-	}
-
-	for (a = 0; a < size - 1; a++)
-	{
-		min_index = array + a;
+		min_index = a;
 		for (b = a + 1; b < size; b++)
-			min_index = (array[b] < *min_index) ? (array + b) : min_index;
-
-		if ((array + a) != min_index)
 		{
-			swap_insert(array + a, min_index);
+			if (array[b] < array[min_index])
+			{
+				min_index = b;
+			}
+		}
+		if (min_index != a)
+		{
+			swap_insert(&array[min_index], &array[a]);
 			print_array(array, size);
 		}
 	}
