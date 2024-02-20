@@ -7,8 +7,8 @@ void quick_sort(int *array, size_t size);
 
 /**
  * swap - Swaps two integers in an array
- * @a: Pointer to the first integer
- * @b: Pointer to the second integer
+ * @x: Pointer to the first integer
+ * @y: Pointer to the second integer
  */
 
 void swap_quick(int *x, int *y)
@@ -79,7 +79,7 @@ void recursive_quick_sort(int *array, int right, int left, size_t size)
 
 /**
  * quick_sort - Function Sorts an array of integers
- in ascending order using Quick sort.
+ * in ascending order using Quick sort.
  * @array: The Array to be sorted.
  * @size: The Size of the array.
  */
