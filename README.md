@@ -49,5 +49,6 @@
 
 #### AUTHORS
 
-@ UDUAK-OBONG UWAH
-@ Mikey Kanu
+@ UDUAK-OBONG UWAH 
+
+@ MICHAEL KANU
