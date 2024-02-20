@@ -38,5 +38,9 @@ void insertion_sort_list(listint_t **list);
 void nodes_swap(listint_t **head, listint_t **p1, listint_t *p2);
 void swap_insert(int *x, int *y);
 void selection_sort(int *array, size_t size);
+void quick_sort(int *array, size_t size);
+void recursive_quick_sort(int *array, int right, int left, size_t size);
+int lomuto_partition(int *array, int start, int end, size_t size);
+void swap_quick(int *x, int *y);
 
 #endif
